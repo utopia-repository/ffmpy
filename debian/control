@@ -1,0 +1,55 @@
+Source: ffmpy
+Section: python
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python-setuptools,
+#              python-pytest,
+               python3-all,
+               python3-setuptools,
+               python3-sphinx | python-sphinx,
+               python3-docutils | python-docutils,
+               python3-sphinx-rtd-theme | python-sphinx-rtd-theme,
+#              python3-pytest
+Standards-Version: 3.9.8
+Homepage: https://github.com/Ch00k/ffmpy
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/utopia-repository/ffmpy
+Vcs-Browser: https://github.com/utopia-repository/ffmpy
+#Testsuite: autopkgtest-pkg-python
+
+Package: python-ffmpy
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, ffmpeg
+Suggests: python-ffmpy-doc
+Description: Simple Python wrapper around the FFmpeg command line (Python 2)
+ ffmpy is a simplistic FFmpeg command line wrapper. It implements a Pythonic
+ interface for FFmpeg command line compilation, and uses the Python subprocess
+ module to execute these compiled command lines.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-ffmpy
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, ffmpeg
+Suggests: python-ffmpy-doc
+Description: Simple Python wrapper around the FFmpeg command line (Python 3)
+ ffmpy is a simplistic FFmpeg command line wrapper. It implements a Pythonic
+ interface for FFmpeg command line compilation, and uses the Python subprocess
+ module to execute these compiled command lines.
+ .
+ This package installs the library for Python 3.
+
+Package: python-ffmpy-doc
+Architecture: all
+Section: doc
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Description: Simple Python wrapper around the FFmpeg command line (common docs)
+ ffmpy is a simplistic FFmpeg command line wrapper. It implements a Pythonic
+ interface for FFmpeg command line compilation, and uses the Python subprocess
+ module to execute these compiled command lines.
+ .
+ This is the common documentation package.
