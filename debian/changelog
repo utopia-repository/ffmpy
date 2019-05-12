@@ -1,9 +1,9 @@
-ffmpy (0.2.2~git20161229~27b7428-0utopia2) UNRELEASED; urgency=medium
+ffmpy (0.2.2~git20161229~27b7428-0utopia2) unstable; urgency=medium
 
   * Disable watch file: we sync with upstream Git instead of PyPI since the
     latter does not include docs.
 
- -- James Lu <james@overdrivenetworks.com>  Sat, 11 May 2019 21:01:14 -0700
+ -- James Lu <james@overdrivenetworks.com>  Sat, 11 May 2019 21:02:58 -0700
 
 ffmpy (0.2.2~git20161229~27b7428-0utopia1) unstable; urgency=medium
 
